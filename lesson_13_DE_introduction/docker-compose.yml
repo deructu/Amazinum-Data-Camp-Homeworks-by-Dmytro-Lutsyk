@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:18
+    container_name: hometask_13
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: elt_pipeline
+      POSTGRES_USER: deructu
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+  jupyter:
+    build: .
+    container_name: env_jupyter
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: elt_pipeline
+      DB_USER: deructu
+      DB_PASSWORD: postgres
