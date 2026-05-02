@@ -11,6 +11,7 @@ docker compose up -d --build
 ```text
 http://localhost:8888
 ```
+### 4. Start all cels in lesson_13_pipeline.ipynb
 
 ## Results
 
