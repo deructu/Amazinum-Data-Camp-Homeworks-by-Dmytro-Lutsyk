@@ -12,13 +12,6 @@ docker compose up -d --build
 http://localhost:8888
 ```
 
-### 3. PostgreSQL settings
-- Host: `localhost`
-- Port: `5432`
-- Database: `elt_pipeline`
-- User: `deructu`
-- Password: `postgres`
-
 ## Results
 
 The pipeline successfully created **4 clean tables** with processed data and **2 analytical tables**:
