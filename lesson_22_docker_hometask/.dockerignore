@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+outputs/*
+examples/*.png
+examples/*.log
+.ipynb_checkpoints/
+.git/
+.DS_Store

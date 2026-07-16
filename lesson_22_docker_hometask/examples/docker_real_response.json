@@ -1,0 +1,1 @@
+{"filename":"horse.jpeg","image_shape":[168,300,3],"confidence_threshold":0.25,"detections_count":1,"detections":[{"class_id":17,"class_name":"horse","confidence":0.9358,"bbox_xyxy":[73.12,7.27,241.23,161.62]}],"annotated_image":"outputs/detected_horse.jpg"}

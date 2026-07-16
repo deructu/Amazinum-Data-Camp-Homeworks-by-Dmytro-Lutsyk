@@ -1,0 +1,17 @@
+# Build image
+docker build -t lesson-22-docker-yolo-api .
+
+# Run API container
+docker run --rm -p 8000:8000 --name lesson_22_yolo_api lesson-22-docker-yolo-api
+
+# Open Swagger UI
+http://127.0.0.1:8000/docs
+
+# Run a script inside the container by overriding CMD through docker run arguments
+docker run --rm lesson-22-docker-yolo-api python smoke_check.py
+
+# Run with Docker Compose
+docker compose up --build
+
+# Stop Docker Compose services
+docker compose down
